@@ -1,0 +1,12 @@
+name: CFGamma
+version: '${version}'
+main: ru.conderfix.cfgamma.CFGamma
+api-version: '1.16'
+
+authors: [ConderFix]
+
+depend:
+  - packetevents
+
+commands:
+  gamma: {}
