@@ -15,9 +15,9 @@ public class Config {
         WORLDS.addAll(config.getStringList("worlds"));
     }
 
-    private Set<String> WORLDS = new HashSet<>();
+    private final Set<String> WORLDS = new HashSet<>();
 
     public boolean isWorldInConfig(World world) {
-        return WORLDS.contains(world);
+        return WORLDS.contains(world.getName());
     }
 }

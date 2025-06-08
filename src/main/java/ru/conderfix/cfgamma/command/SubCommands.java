@@ -5,7 +5,6 @@ import com.google.common.collect.ImmutableClassToInstanceMap;
 import org.bukkit.plugin.Plugin;
 import ru.conderfix.cfgamma.command.list.ReloadCommand;
 
-
 import javax.annotation.Nullable;
 import java.util.Collection;
 
