@@ -1,2 +1,4 @@
 worlds:
   - "world"
+  - "spawn"
+light-level: 18 # Уровень света. Максималка 18

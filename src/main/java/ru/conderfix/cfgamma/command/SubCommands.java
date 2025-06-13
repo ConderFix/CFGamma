@@ -3,7 +3,9 @@ package ru.conderfix.cfgamma.command;
 import com.google.common.collect.ClassToInstanceMap;
 import com.google.common.collect.ImmutableClassToInstanceMap;
 import org.bukkit.plugin.Plugin;
+import ru.conderfix.cfgamma.command.list.InfoCommand;
 import ru.conderfix.cfgamma.command.list.ReloadCommand;
+import ru.conderfix.cfgamma.command.list.SetCommand;
 
 import javax.annotation.Nullable;
 import java.util.Collection;
@@ -14,6 +16,8 @@ public class SubCommands {
     public SubCommands(Plugin plugin) {
         commands = new ImmutableClassToInstanceMap.Builder<SubCommand>()
                 .put(ReloadCommand.class, new ReloadCommand(plugin))
+                .put(SetCommand.class, new SetCommand(plugin))
+                .put(InfoCommand.class, new InfoCommand(plugin))
                 .build();
     }
 

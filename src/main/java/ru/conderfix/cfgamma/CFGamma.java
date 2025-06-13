@@ -2,8 +2,11 @@ package ru.conderfix.cfgamma;
 
 import com.github.retrooper.packetevents.PacketEvents;
 import com.github.retrooper.packetevents.event.PacketListenerPriority;
+import com.github.retrooper.packetevents.wrapper.play.server.WrapperPlayServerUpdateLight;
 import io.github.retrooper.packetevents.factory.spigot.SpigotPacketEventsBuilder;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import ru.conderfix.cfgamma.command.GammaCommand;
 import ru.conderfix.cfgamma.light.BestLightData;
@@ -32,11 +35,9 @@ public final class CFGamma extends JavaPlugin implements Listener {
         super.getCommand("gamma").setExecutor(new GammaCommand(this));
     }
 
-
     @Override
     public void onDisable() {
         PacketEvents.getAPI().terminate();
     }
-
 
 }
